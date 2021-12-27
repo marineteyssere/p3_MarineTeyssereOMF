@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+/* Paramètres des page menus */
+
+.header-omf__arrow 
+{
+    text-decoration: none;
+    color: #636363cc;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.underheader-omf 
+{
+    overflow: hidden;
+    height: 320px;
+}
+
+.underheader-omf__picture 
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.fond-gris-menu 
+{
+    position: relative;
+    background-color: #ececec;
+    border-radius: 45px 45px 0px 0px;
+    margin-top: -50px;
+    padding-bottom: 10px;
+}
+
+.page-restaurant 
+{
+    margin: 0px 20px;
+}
+
+.page-restaurant__title 
+{
+    font-family: "Shrikhand";
+    font-size: 1.75rem;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.page-menu__title 
+{
+    margin-bottom: 15px;
+}
+
+.page-menu__text 
+{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 20px 0px 8px 0px;
+}
+
+.page-menu__line 
+{
+    background-color: #99E2D0;
+    margin: 0;
+    height: 3px;
+    width: 40px;
+}
+
+.page-menu 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 580px)
+{
+    .page-menu 
+    {
+    display: flex;
+    flex-direction: row;
+    }
+}
+
+.page-menu__bloc 
+{
+    margin: 0 15px 15px 0;
+    background: white;
+    height: 70px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px #d3d3d3;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-menu__plat 
+{
+    margin: 15px 0px 5px 15px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.page-menu__accetprix 
+{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+    transform-origin: left 50%;
+    transition-duration: 0.5s;
+}
+
+.page-menu__accompagnement 
+{
+    margin: 0px 0px 0px 15px;
+    font-weight: normal;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.page-menu__prix 
+{
+    margin: 0;
+    font-weight: bold;
+    padding-left: 10px;
+    width: 50px;
+}
+
+.page-menu__check 
+{
+    position: absolute;
+    background-color: #99E2D0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 65px;
+    transform-origin: right 50%;
+    border-radius: 0px 20px 20px 0px;
+    transform: translateX(65px);
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+
+
+
+
+

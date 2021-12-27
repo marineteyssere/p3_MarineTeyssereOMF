@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/* Header */
+
+.header-omf
+{
+    position: sticky;
+    top: 0;
+    background: white;
+    height: 65px;
+    box-shadow: 0 2px 4px #636363cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.header-omf__logo 
+{
+    width: 190px;
+}
+
+.under-header 
+{
+    background: #ececec;
+    padding-bottom: 30px;
+}
+
+/* Footer */
+
+.footer-omf 
+{
+    background: rgba(23, 23, 23, 0.8);
+    height: 200px;
+}
+
+.footer-omf__bloc 
+{
+    margin: 0px 20px;
+}
+
+.footer-omf__title 
+{
+    color: white;
+    font-family: "Shrikhand";
+    letter-spacing: 0.05rem;
+    margin: 0;
+    padding: 20px 0px 18px 0px;
+}
+
+.footer-omf__bloctext 
+{
+    margin: 8px 0;
+}
+
+.footer-omf__bloclink 
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+

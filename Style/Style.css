@@ -72,6 +72,46 @@ article {
   display: block;
 }
 
+.fond-gris {
+  background: #ececec;
+}
+
+/* Boutons */
+.omf-btn {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  width: 220px;
+  height: 50px;
+  margin: 30px auto;
+  border-radius: 30px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0 2px 4px #636363cc;
+  z-index: 1;
+}
+
+.omf-btn::after {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(#9356DC, #ae80e5);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+}
+
+.omf-btn__title {
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+/*Icones*/
 .fas .fa {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -90,11 +130,7 @@ article {
   font-weight: 400;
 }
 
-.fond-gris {
-  background: #ececec;
-}
-
-/* Header  a ranger*/
+/* Header */
 .location {
   background: #d3d3d3;
 }
@@ -164,45 +200,6 @@ article {
   border-radius: 20px;
   margin: 10px 20px 10px 25px;
   box-shadow: 2px 2px 7px #d3d3d3;
-}
-
-@media screen and (min-width: 580px) {
-  .onglet-fonct {
-    width: 100%;
-  }
-}
-.onglet-fonct__ball {
-  position: relative;
-  margin-left: -10px;
-  height: 27px;
-  width: 27px;
-  background: #9356DC;
-  border-radius: 20px;
-}
-
-.onglet-fonct__text {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 27px;
-  margin: 0;
-}
-
-.onglet-fonct {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  background: #ececec;
-  border-radius: 20px;
-  margin: 10px 20px 10px 25px;
-  box-shadow: 2px 2px 7px #d3d3d3;
-}
-
-.onglet-fonct__numb {
-  margin: 4px 0 0 9px;
-  font-weight: bold;
-  color: white;
 }
 
 /* Bloc Restaurants */
@@ -289,39 +286,44 @@ article {
   opacity: 0;
 }
 
-/* Boutons */
-.omf-btn {
+/* Fonctionnalités */
+@media screen and (min-width: 580px) {
+  .onglet-fonct {
+    width: 100%;
+  }
+}
+.onglet-fonct__ball {
   position: relative;
-  display: block;
+  margin-left: -10px;
+  height: 27px;
+  width: 27px;
+  background: #9356DC;
+  border-radius: 20px;
+}
+
+.onglet-fonct__text {
   text-decoration: none;
-  width: 220px;
-  height: 50px;
-  margin: 30px auto;
-  border-radius: 30px;
-  background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0 2px 4px #636363cc;
-  z-index: 1;
-}
-
-.omf-btn::after {
-  content: "";
-  position: absolute;
-  border-radius: 30px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(#9356DC, #ae80e5);
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 250ms;
-}
-
-.omf-btn__title {
-  text-align: center;
-  padding-top: 15px;
-  color: white;
+  color: black;
   font-weight: bold;
+  font-size: 1rem;
+  padding: 27px;
+  margin: 0;
+}
+
+.onglet-fonct {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background: #ececec;
+  border-radius: 20px;
+  margin: 10px 20px 10px 25px;
+  box-shadow: 2px 2px 7px #d3d3d3;
+}
+
+.onglet-fonct__numb {
+  margin: 4px 0 0 9px;
+  font-weight: bold;
+  color: white;
 }
 
 /* Header */

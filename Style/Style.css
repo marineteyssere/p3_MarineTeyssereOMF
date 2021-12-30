@@ -1,6 +1,7 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box;
+  font-family: "Roboto";
 }
 
 div {
@@ -128,6 +129,13 @@ article {
 .far {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
+}
+
+.hoverheart {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  margin-bottom: 30px;
 }
 
 /* Header */

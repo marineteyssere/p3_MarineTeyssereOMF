@@ -76,6 +76,12 @@
     display: flex;
     flex-direction: column;
 }
+/*Animation entréé chargement*/ 
+
+.page-menu > :nth-of-type(3) 
+{
+    animation: SlideDown 0.8s ease-in-out;
+}
 
 @media screen and (min-width: 580px)
 {
@@ -133,19 +139,37 @@
     width: 50px;
 }
 
-.page-menu__check 
+/*Animation plat check*/ 
+
+.page-menu__check
 {
-    position: absolute;
-    background-color: #99E2D0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 65px;
-    transform-origin: right 50%;
-    border-radius: 0px 20px 20px 0px;
-    transform: translateX(65px);
-    overflow: hidden;
-    transition-duration: 0.5s;
+    &:hover
+    {
+       position: absolute;
+       background-color: #99E2D0;
+       top: 0;
+       bottom: 0;
+       right: 0;
+       width: 65px;
+       transform-origin: right 50%;
+       border-radius: 0px 20px 20px 0px;
+       transform: translateX(65px);
+       overflow: hidden;
+       transition-duration: 0.5s;
+    }
+}
+
+.page-menu .fas.fa-check-circle
+{
+    &:hover
+    {
+       position: absolute;
+       left: 20px;
+       top: 25px;
+       font-size: 1.5rem;
+       color: white;
+       opacity: 1;
+    }
 }
 
 

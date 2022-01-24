@@ -143,9 +143,8 @@
 
 .page-menu__check
 {
-    &:hover
-    {
-       position: absolute;
+
+       position: relative;
        background-color: #99E2D0;
        top: 0;
        bottom: 0;
@@ -156,20 +155,16 @@
        transform: translateX(65px);
        overflow: hidden;
        transition-duration: 0.5s;
-    }
 }
 
 .page-menu .fas.fa-check-circle
 {
-    &:hover
-    {
-       position: absolute;
+       position: relative;
        left: 20px;
        top: 25px;
        font-size: 1.5rem;
        color: white;
        opacity: 1;
-    }
 }
 
 

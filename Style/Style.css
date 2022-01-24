@@ -81,6 +81,65 @@ article {
   background: #ececec;
 }
 
+/* Loarder */
+.loadScreen {
+  background: white;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeout 0.2s 3s forwards;
+}
+
+.spinnerBig {
+  position: absolute;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  border: 3rem solid rgba(161, 160, 160, 0);
+  border-top: 3rem solid #9356dc;
+  border-left: 3rem solid #9356dc;
+  border-bottom: 3rem solid #9356dc;
+  animation: spinneroff 0.8s 0.2s 5;
+  opacity: 0;
+}
+
+.spinner {
+  border: 2rem solid rgba(161, 160, 160, 0);
+  border-top: 2rem solid #ff79da;
+  border-right: 2rem solid #ff79da;
+  border-bottom: 2rem solid #ff79da;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  opacity: 1;
+  animation: spinner 0.8s 0.2s 5;
+  position: absolute;
+  opacity: 0;
+}
+
+.spinnerSmall {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1.5rem solid rgba(161, 160, 160, 0);
+  border-top: 1.5rem solid #99e2d0;
+  border-left: 1.5rem solid #99e2d0;
+  border-bottom: 1.5rem solid #99e2d0;
+  animation: spinneroff 0.8s 0.2s 5;
+  opacity: 0;
+}
+
+.loadScreen, .spinner, .spinnerBig, .spinnerSmall:hover {
+  transition-duration: 5sec;
+  opacity: 1;
+}
+
 /* Boutons */
 .omf-btn {
   position: relative;
@@ -537,8 +596,8 @@ article {
 }
 
 /*Animation plat check*/
-.page-menu__check:hover {
-  position: absolute;
+.page-menu__check {
+  position: relative;
   background-color: #99E2D0;
   top: 0;
   bottom: 0;
@@ -551,8 +610,8 @@ article {
   transition-duration: 0.5s;
 }
 
-.page-menu .fas.fa-check-circle:hover {
-  position: absolute;
+.page-menu .fas.fa-check-circle {
+  position: relative;
   left: 20px;
   top: 25px;
   font-size: 1.5rem;

@@ -11,7 +11,6 @@
     position: absolute;
     left: 20px;
     top: 50%;
-    transform: translateY(-50%);
 }
 
 .underheader-omf 
@@ -78,10 +77,6 @@
 }
 /*Animation entréé chargement*/ 
 
-.page-menu > :nth-of-type(3) 
-{
-    animation: SlideDown 0.8s ease-in-out;
-}
 
 @media screen and (min-width: 580px)
 {
@@ -100,8 +95,7 @@
     width: 100%;
     border-radius: 20px;
     box-shadow: 2px 2px 7px #d3d3d3;
-    position: relative;
-    overflow: hidden;
+   /* position: relative;*/
 }
 
 .page-menu__plat 
@@ -109,6 +103,7 @@
     margin: 15px 0px 5px 15px;
     font-weight: bold;
     font-size: 1rem;
+    margin-top: -55px;
 }
 
 .page-menu__accetprix 
@@ -146,28 +141,39 @@
 
        position: relative;
        background-color: #99E2D0;
-       top: 0;
-       bottom: 0;
-       right: 0;
        width: 65px;
-       transform-origin: right 50%;
+       height: 70px;
        border-radius: 0px 20px 20px 0px;
-       transform: translateX(65px);
-       overflow: hidden;
-       transition-duration: 0.5s;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-left: 260px;
+       z-index: 0;
+       opacity: 0;
+       cursor: pointer;
+    &:hover
+    {
+        transform-origin: left 50%;
+        transform: translateX(65px);
+        transition-duration: 2s;
+        z-index: 1;
+        opacity: 1;
+        
+    }
 }
 
-.page-menu .fas.fa-check-circle
+.fa-check-circle
 {
-       position: relative;
-       left: 20px;
-       top: 25px;
+      
        font-size: 1.5rem;
-       color: white;
-       opacity: 1;
+       color:white;
+       opacity: 0;
+       cursor: pointer;
+       &:hover
+    {
+        transform: rotate(360deg);
+        transition-duration: 1s;
+        opacity: 1;
+    }
 }
-
-
-
-
 

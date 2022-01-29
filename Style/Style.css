@@ -25,48 +25,28 @@ section {
 h1 {
   display: block;
   font-size: 2em;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   font-weight: bold;
 }
 
 h2 {
   display: block;
   font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   font-weight: bold;
 }
 
 h3 {
   display: block;
   font-size: 1.17em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   font-weight: bold;
 }
 
 h4 {
   display: block;
-  margin-block-start: 1.33em;
-  margin-block-end: 1.33em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   font-weight: bold;
 }
 
 p {
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 
 a {
@@ -92,7 +72,8 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeout 0.2s 3s forwards;
+  animation-name: fadeout;
+  animation-duration: 5s;
 }
 
 .spinnerBig {
@@ -104,8 +85,8 @@ article {
   border-top: 3rem solid #9356dc;
   border-left: 3rem solid #9356dc;
   border-bottom: 3rem solid #9356dc;
-  animation: spinneroff 0.8s 0.2s 5;
-  opacity: 0;
+  animation-name: fadeout;
+  animation-duration: 5s;
 }
 
 .spinner {
@@ -116,10 +97,9 @@ article {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
-  opacity: 1;
-  animation: spinner 0.8s 0.2s 5;
+  animation-name: fadeout;
   position: absolute;
-  opacity: 0;
+  animation-duration: 5s;
 }
 
 .spinnerSmall {
@@ -131,15 +111,20 @@ article {
   border-top: 1.5rem solid #99e2d0;
   border-left: 1.5rem solid #99e2d0;
   border-bottom: 1.5rem solid #99e2d0;
-  animation: spinneroff 0.8s 0.2s 5;
-  opacity: 0;
+  animation-name: fadeout;
+  animation-duration: 5s;
 }
 
-.loadScreen, .spinner, .spinnerBig, .spinnerSmall:hover {
-  transition-duration: 5sec;
-  opacity: 1;
+@keyframes fadeout {
+  from {
+    animation-iteration-count: 1;
+    animation-name: fadeout;
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
-
 /* Boutons */
 .omf-btn {
   position: relative;
@@ -485,7 +470,6 @@ article {
   position: absolute;
   left: 20px;
   top: 50%;
-  transform: translateY(-50%);
 }
 
 .underheader-omf {
@@ -543,10 +527,6 @@ article {
 }
 
 /*Animation entréé chargement*/
-.page-menu > :nth-of-type(3) {
-  animation: SlideDown 0.8s ease-in-out;
-}
-
 @media screen and (min-width: 580px) {
   .page-menu {
     display: flex;
@@ -560,14 +540,14 @@ article {
   width: 100%;
   border-radius: 20px;
   box-shadow: 2px 2px 7px #d3d3d3;
-  position: relative;
-  overflow: hidden;
+  /* position: relative;*/
 }
 
 .page-menu__plat {
   margin: 15px 0px 5px 15px;
   font-weight: bold;
   font-size: 1rem;
+  margin-top: -55px;
 }
 
 .page-menu__accetprix {
@@ -599,23 +579,34 @@ article {
 .page-menu__check {
   position: relative;
   background-color: #99E2D0;
-  top: 0;
-  bottom: 0;
-  right: 0;
   width: 65px;
-  transform-origin: right 50%;
+  height: 70px;
   border-radius: 0px 20px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 260px;
+  z-index: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.page-menu__check:hover {
+  transform-origin: left 50%;
   transform: translateX(65px);
-  overflow: hidden;
-  transition-duration: 0.5s;
+  transition-duration: 2s;
+  z-index: 1;
+  opacity: 1;
 }
 
-.page-menu .fas.fa-check-circle {
-  position: relative;
-  left: 20px;
-  top: 25px;
+.fa-check-circle {
   font-size: 1.5rem;
   color: white;
+  opacity: 0;
+  cursor: pointer;
+}
+.fa-check-circle:hover {
+  transform: rotate(360deg);
+  transition-duration: 1s;
   opacity: 1;
 }
 

@@ -212,7 +212,41 @@
         opacity: 1;
         }
     }
+
+.icons-like {
+    /* Div des icons coeurs des pages menus */
+    position: absolute; right:50px; bottom:1030px; margin-bottom:30px;
+    z-index: 50;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    
+  }
 }
+
+@media screen and (min-width: 989px) 
+
+{
+.page-menu__bloc 
+{
+    margin: 0 15px 15px 0;
+    background: white;
+    height: 70px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px #d3d3d3;
+    &:hover 
+    {
+        .page-menu__check
+        {
+        transform-origin: right 50%;
+        transform: translateX(1000px);
+        transition-duration: 3s;
+        z-index: 1;
+        opacity: 1;
+        }
+    }
+
 .icons-like {
     /* Div des icons coeurs des pages menus */
     position: absolute; right:50px; bottom:1030px; margin-bottom:30px;

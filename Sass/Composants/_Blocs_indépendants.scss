@@ -109,7 +109,6 @@
 
 .fa, .fas, .far, .fal, .fad, .fab 
 {
-    -webkit-font-smoothing: antialiased;
     display: inline-block;
     font-style: normal;
     font-variant: normal;
@@ -156,20 +155,31 @@
     cursor: pointer;
   }
 
+  /* position: absolute;
+    z-index: 50;
+    bottom: 0.3rem;
+    right: 0.3rem;*/
+
+  .icon-like:hover .icon-like--full {
+    transform: scale(1);
+  }
+
   .icon-like--full {
     /* Effet coeur */
     color: transparent;
     background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
     background-clip: text;
-    -webkit-background-clip: text;
     transform: scale(0);
     transform-origin: bottom;
     transition: transform 400ms cubic-bezier(0.32, -0.01, 0.22, 0.82);
-  }
+    position: absolute;
+}
+  
 
 .icon-like--empty:hover
 {
     color:#9356DC;
+    position: absolute;
 }
 
 /* Header */
@@ -210,59 +220,6 @@
     margin: 0 20px;
 }
 
-
-/* Bloc Fonctionnement */
-
-.bloc-title 
-{
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding: 50px 0 10px 20px;
-    margin: 0;
-}
-
-.bloc-title 
-{
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding: 50px 0 10px 20px;
-    margin: 0;
-}
-
-.bloc-fonctionnement 
-{
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-@media screen and (min-width: 990px) 
-{
-	.bloc-fonctionnement 
-	{
-    flex-direction: row;
-    justify-content: space-between;
-    }
-}
-
-.onglet-fonct 
-{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    background: #ececec;
-    border-radius: 20px;
-    margin: 10px 20px 10px 25px;
-    box-shadow: 2px 2px 7px #d3d3d3;
-}
-
-.onglet-fonct .fas {
-    width: 15px;
-    height: 15px;
-    color: #636363cc;
-    margin-left: 20px;
-}
 
 /* Bloc Restaurants */
 
@@ -351,8 +308,49 @@
     padding: 8px;
 }
 
-/* Fonctionnalités */
+/* Bloc Fonctionnement */
 
+.bloc-title 
+{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 50px 0 10px 20px;
+    margin: 0;
+}
+
+.bloc-fonctionnement 
+{
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 990px) 
+{
+	.bloc-fonctionnement 
+	{
+    flex-direction: row;
+    justify-content: space-between;
+    }
+}
+
+.onglet-fonct 
+{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background: #ececec;
+    border-radius: 20px;
+    margin: 10px 20px 10px 25px;
+    box-shadow: 2px 2px 7px #d3d3d3;
+   /* &:hover
+    {
+        background:#ae80e5;
+        transition: opacity 250ms;
+    } */
+    
+}
 
 @media screen and (min-width: 990px)
 {
@@ -380,17 +378,7 @@
     font-size: 1rem;
     padding: 27px;
     margin: 0;
-}
-
-.onglet-fonct 
-{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    background: #ececec;
-    border-radius: 20px;
-    margin: 10px 20px 10px 25px;
-    box-shadow: 2px 2px 7px #d3d3d3;
+    
 }
 
 .onglet-fonct__numb 
@@ -398,6 +386,19 @@
     margin: 4px 0 0 9px;
     font-weight: bold;
     color: white;
+}
+
+
+.onglet-fonct .fas {
+    width: 15px;
+    height: 15px;
+    color: #636363cc;
+    margin-left: 20px;
+    &:hover
+    {
+        color:#ae80e5;
+        transition: opacity 250ms;
+    }
 }
 
 

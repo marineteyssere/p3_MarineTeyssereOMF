@@ -324,14 +324,6 @@
 
 /* Bloc Fonctionnement */
 
-.bloc-title 
-{
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding: 50px 0 10px 20px;
-    margin: 0;
-}
-
 .bloc-fonctionnement 
 {
     padding-bottom: 50px;
@@ -362,8 +354,7 @@
 
 .onglet-fonct:hover
     {
-        background:#ff79da;
-        transition: opacity 250ms;
+        background:#99E2D0;
     } 
 
 @media screen and (min-width: 990px)
@@ -410,7 +401,7 @@
     margin-left: 20px;
     &:hover
     {
-        color:#ae80e5;
+        color:#FF79DA;
         transition: opacity 250ms;
     }
 }

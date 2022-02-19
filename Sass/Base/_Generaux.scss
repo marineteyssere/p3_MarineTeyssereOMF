@@ -55,6 +55,12 @@ h4
     overflow: hidden; /* les dépassements seront masqués */
 }
 
+h4
+{
+    display: block;
+    overflow: hidden; /* les dépassements seront masqués */
+}
+
 
 p {
     display: block;
@@ -75,6 +81,7 @@ article
 {
     background: #ececec;
 }
+
 
 
 

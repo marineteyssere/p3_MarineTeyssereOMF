@@ -9,6 +9,7 @@
     left: 0;
     top: 0;
     background-color: hsla(0,0%,100%,.9);
+    /*hsla exprime une couleur selon ses composantes de teinte, de saturation et de luminosité. Un composant facultatif représente la transparence de la couleur.*/
     animation: loader .01s;
     animation-delay: 1.75s;
     animation-fill-mode: both;
@@ -39,6 +40,7 @@
 .loader__item--2 {
     background-color: #ff79da;
     animation-delay: .25s;
+    /*durée d'attente avant de démarrer l'animation*/
 }
 
 .loader__item--3 {
@@ -67,6 +69,7 @@
     100% {
         transform: translateY(0);
     }
+/*La fonction translateY() permet de déplacer un élement verticalement sur le plan*/
     
 }
 
@@ -239,7 +242,7 @@
 
 .bloc-title 
 {
-    font-weight: bold;
+    font-weight: 900;
     font-size: 1.5rem;
     padding: 50px 0 10px 20px;
     margin: 0;

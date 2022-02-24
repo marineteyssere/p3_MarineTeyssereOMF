@@ -22,12 +22,17 @@ section {
   display: block;
 }
 
+title {
+  font-family: "Roboto";
+}
+
 h1 {
   display: block;
   font-size: 2em;
   font-weight: bold;
   overflow: hidden;
   /* les dépassements seront masqués */
+  font-family: "Roboto";
 }
 
 h2 {
@@ -36,14 +41,16 @@ h2 {
   font-weight: bold;
   overflow: hidden;
   /* les dépassements seront masqués */
+  font-family: "Roboto";
 }
 
 h3 {
   display: block;
   font-size: 1.17em;
-  font-weight: bold;
+  font-weight: 900;
   overflow: hidden;
   /* les dépassements seront masqués */
+  font-family: "Roboto";
 }
 
 h4 {
@@ -51,22 +58,26 @@ h4 {
   font-weight: bold;
   overflow: hidden;
   /* les dépassements seront masqués */
+  font-family: "Roboto";
 }
 
 h4 {
   display: block;
   overflow: hidden;
   /* les dépassements seront masqués */
+  font-family: "Roboto";
 }
 
 p {
   display: block;
   overflow: hidden;
   /* les dépassements seront masqués */
+  font-family: "Roboto";
 }
 
 a {
   background-color: transparent;
+  font-family: "Roboto";
 }
 
 article {
@@ -85,6 +96,7 @@ article {
   left: 0;
   top: 0;
   background-color: rgba(255, 255, 255, 0.9);
+  /*hsla exprime une couleur selon ses composantes de teinte, de saturation et de luminosité. Un composant facultatif représente la transparence de la couleur.*/
   animation: loader 0.01s;
   animation-delay: 1.75s;
   animation-fill-mode: both;
@@ -115,6 +127,7 @@ article {
 .loader__item--2 {
   background-color: #ff79da;
   animation-delay: 0.25s;
+  /*durée d'attente avant de démarrer l'animation*/
 }
 
 .loader__item--3 {
@@ -141,6 +154,7 @@ article {
   100% {
     transform: translateY(0);
   }
+  /*La fonction translateY() permet de déplacer un élement verticalement sur le plan*/
 }
 /* Boutons */
 .omf-btn {
@@ -301,7 +315,7 @@ article {
 
 /* Bloc Restaurants */
 .bloc-title {
-  font-weight: bold;
+  font-weight: 900;
   font-size: 1.5rem;
   padding: 50px 0 10px 20px;
   margin: 0;
@@ -630,7 +644,7 @@ article {
   box-shadow: 2px 2px 7px #d3d3d3;
 }
 .page-menu__bloc:hover .page-menu__check {
-  transform-origin: right 50%;
+  transform-origin: left 50%;
   transform: translateX(65px);
   transition-duration: 2s;
   z-index: 1;
@@ -2746,6 +2760,21 @@ article {
     margin-bottom: 520px;
   }
 }
+/* arrivée des coeurs */
+.coeur-menu .icon-like .icon-like--full .icon-like--empty {
+  animation-name: coeur;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes coeur {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*Effets chargement de la page*/
 .loading-menu-1 {
   animation-name: boum;
@@ -2768,13 +2797,11 @@ article {
 @keyframes boum {
   0% {
     opacity: 0;
-    -webkit-transform: scaleY(0);
     transform: scaleY(0);
     margin-top: 100px;
   }
   100% {
     opacity: 1;
-    -webkit-transform: scaleY(1);
     transform: scaleY(1);
     margin-top: 0;
   }

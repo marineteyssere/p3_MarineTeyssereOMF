@@ -25,12 +25,17 @@ section {
     display: block;
 }
 
+title{
+    font-family: "Roboto"
+}
+
 h1 
 {
     display: block;
     font-size: 2em;
     font-weight: bold;
     overflow: hidden; /* les dépassements seront masqués */
+    font-family: "Roboto"
 }
 
 h2 
@@ -39,13 +44,15 @@ h2
     font-size: 1.5em;
     font-weight: bold;
     overflow: hidden; /* les dépassements seront masqués */
+    font-family: "Roboto"
 }
 
 h3 {
     display: block;
     font-size: 1.17em;
-    font-weight: bold;
+    font-weight: 900;
     overflow: hidden; /* les dépassements seront masqués */
+    font-family: "Roboto"
 }
 
 h4 
@@ -53,23 +60,27 @@ h4
     display: block;
     font-weight: bold;
     overflow: hidden; /* les dépassements seront masqués */
+    font-family: "Roboto"
 }
 
 h4
 {
     display: block;
     overflow: hidden; /* les dépassements seront masqués */
+    font-family: "Roboto"
 }
 
 
 p {
     display: block;
     overflow: hidden; /* les dépassements seront masqués */
+    font-family: "Roboto"
 }
 
 a 
 {
     background-color: transparent;  
+    font-family: "Roboto"
 }
 
 article 

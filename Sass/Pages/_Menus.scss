@@ -164,7 +164,7 @@
     {
         .page-menu__check
         {
-        transform-origin: right 50%;
+        transform-origin: left 50%;
         transform: translateX(65px);
         transition-duration: 2s;
         z-index: 1;
@@ -3162,6 +3162,25 @@
     
     }
 }
+/* arrivée des coeurs */ 
+.coeur-menu .icon-like .icon-like--full .icon-like--empty
+{
+    animation-name: coeur;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes coeur 
+{
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 /*Effets chargement de la page*/
 
@@ -3195,13 +3214,11 @@
 
     0% {
         opacity: 0;
-        -webkit-transform: scaleY(0);
         transform: scaleY(0);
         margin-top: 100px;
     }
     100% {
         opacity: 1;
-        -webkit-transform: scaleY(1);
         transform: scaleY(1);
         margin-top: 0;
     }

@@ -43,7 +43,6 @@
 
 .page-restaurant__title 
 {
-    font-family: "Shrikhand";
     font-size: 1.75rem;
     margin: 0;
     padding-top: 20px;
@@ -135,7 +134,7 @@
        display: flex;
        justify-content: center;
        align-items: center;
-       margin-left: 260px;
+       margin-left: 305px;
        z-index: 0;
        opacity: 0;
        cursor: pointer;
@@ -164,8 +163,7 @@
     {
         .page-menu__check
         {
-        transform-origin: left 50%;
-        transform: translateX(65px);
+        transform: translateX(6px);
         transition-duration: 2s;
         z-index: 1;
         opacity: 1;

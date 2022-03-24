@@ -90,27 +90,31 @@
     margin: 15px 0px 5px 15px;
     font-weight: bold;
     font-size: 1rem;
-    margin-top: -55px;
+    margin-top: 17px;
 }
 
 .page-menu__accetprix 
 {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    width: 100%;
+    width: 85%;
     transform-origin: left 50%;
     transition-duration: 0.5s;
 }
 
 .page-menu__accompagnement 
 {
-    margin: 0px 0px 0px 15px;
+    /*margin: 0px 0px 0px 15px;*/
     font-weight: normal;
     font-size: 0.85rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .page-menu__prix 
@@ -118,7 +122,7 @@
     margin: 0;
     font-weight: bold;
     width: 50px;
-    margin-right: 10px;
+  
 }
 
 /*Animation plat check*/ 
@@ -126,18 +130,18 @@
 .page-menu__check
 {
 
-       position: relative;
-       background-color: #99E2D0;
-       width: 75px;
-       height: 70px;
-       border-radius: 0px 20px 20px 0px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       margin-left: 305px;
-       z-index: 0;
-       opacity: 0;
-       cursor: pointer;
+    position: absolute;
+    background-color: #99E2D0;
+    width: 75px;
+    height: 70px;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -35px;
+    z-index: 0;
+    opacity: 0;
+    cursor: pointer;
    
 }
 
@@ -159,14 +163,17 @@
     width: 100%;
     border-radius: 20px;
     box-shadow: 2px 2px 7px #d3d3d3;
+    display: flex;
+    align-items: baseline;
     &:hover 
     {
         .page-menu__check
         {
-        transform: translateX(6px);
+        /*transform-origin: left (6px);*/
         transition-duration: 2s;
         z-index: 1;
         opacity: 1;
+        right:35px;
         }
         
         .fa-check-circle
@@ -183,7 +190,7 @@
         }
 
         
-    }
+    } 
    
 }
 
@@ -208,6 +215,7 @@
                     transition-duration: 4s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -232,6 +240,7 @@
                     transition-duration: 4s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -256,6 +265,7 @@
                     transition-duration: 4s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -280,6 +290,7 @@
                     transition-duration: 4s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -305,6 +316,7 @@
                     transition-duration: 4s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -329,6 +341,7 @@
                     transition-duration: 4s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -353,6 +366,7 @@
                     transition-duration: 4s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -377,6 +391,7 @@
                     transition-duration: 4s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -401,6 +416,7 @@
                     transition-duration: 4s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -425,6 +441,7 @@
                     transition-duration: 4s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -449,6 +466,7 @@
                     transition-duration: 4s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -473,6 +491,7 @@
                     transition-duration: 4s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -497,6 +516,7 @@
                     transition-duration: 4s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -521,6 +541,7 @@
                     transition-duration: 4s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -545,6 +566,7 @@
                     transition-duration: 4s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -569,6 +591,7 @@
                     transition-duration: 4s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -593,6 +616,7 @@
                     transition-duration: 4s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -617,6 +641,7 @@
                     transition-duration: 4s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -641,6 +666,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -665,6 +691,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -689,6 +716,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -713,6 +741,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -737,6 +766,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -762,6 +792,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -786,6 +817,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -810,6 +842,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -834,6 +867,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -858,6 +892,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -882,6 +917,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -906,6 +942,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -930,6 +967,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -954,6 +992,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -978,6 +1017,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1002,6 +1042,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1026,6 +1067,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1050,6 +1092,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1074,6 +1117,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1098,6 +1142,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1122,6 +1167,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1146,6 +1192,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1170,6 +1217,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1194,6 +1242,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1218,6 +1267,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1243,6 +1293,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1267,6 +1318,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1291,6 +1343,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1315,6 +1368,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1339,6 +1393,7 @@
                     transition-duration: 3s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1363,6 +1418,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1387,6 +1443,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1411,6 +1468,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1435,6 +1493,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1459,6 +1518,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1483,6 +1543,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1507,6 +1568,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1531,6 +1593,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1555,6 +1618,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1579,6 +1643,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1603,6 +1668,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1627,6 +1693,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1651,6 +1718,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1675,6 +1743,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1700,6 +1769,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1724,6 +1794,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1748,6 +1819,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1772,6 +1844,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1796,6 +1869,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1820,6 +1894,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1844,6 +1919,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1868,6 +1944,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1892,6 +1969,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1916,6 +1994,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1940,6 +2019,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1964,6 +2044,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -1988,6 +2069,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2012,6 +2094,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2036,6 +2119,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2060,6 +2144,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2084,6 +2169,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2108,6 +2194,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2132,6 +2219,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2156,6 +2244,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2181,6 +2270,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2205,6 +2295,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2229,6 +2320,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2253,6 +2345,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2277,6 +2370,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2301,6 +2395,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2325,6 +2420,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2349,6 +2445,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2373,6 +2470,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2397,6 +2495,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2421,6 +2520,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2445,6 +2545,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2469,6 +2570,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2493,6 +2595,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2517,6 +2620,7 @@
                     transition-duration: 2s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2541,6 +2645,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2565,6 +2670,8 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
+                    
                 }
             }
     }
@@ -2589,6 +2696,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2613,6 +2721,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2638,6 +2747,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2662,6 +2772,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2686,6 +2797,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2710,6 +2822,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2734,6 +2847,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2758,6 +2872,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2782,6 +2897,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2806,6 +2922,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2830,6 +2947,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2854,6 +2972,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2878,6 +2997,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2902,6 +3022,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2926,6 +3047,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2950,6 +3072,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2974,6 +3097,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -2998,6 +3122,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -3022,6 +3147,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -3046,6 +3172,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -3070,6 +3197,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -3094,6 +3222,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -3119,6 +3248,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }
@@ -3143,6 +3273,7 @@
                     transition-duration: 1s;
                     z-index: 1;
                     opacity: 1;
+                    right: 35px;
                 }
             }
     }

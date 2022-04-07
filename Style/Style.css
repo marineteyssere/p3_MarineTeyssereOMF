@@ -582,8 +582,8 @@ article {
 .page-menu__plat {
   margin: 15px 0px 5px 15px;
   font-weight: bold;
-  font-size: 1rem;
   margin-top: 25px;
+  overflow: hidden;
 }
 
 .page-menu__accetprix {
@@ -617,7 +617,7 @@ article {
 .page-menu__check {
   background-color: #99E2D0;
   width: 35%;
-  height: 70px;
+  height: 90px;
   border-radius: 0px 20px 20px 0px;
   display: flex;
   justify-content: center;
@@ -638,7 +638,7 @@ article {
 .page-menu__bloc {
   margin: 0 15px 15px 0;
   background: white;
-  height: 70px;
+  height: 90px;
   width: 100%;
   border-radius: 20px;
   box-shadow: 2px 2px 7px #d3d3d3;
@@ -671,7 +671,7 @@ article {
   .page-menu__bloc {
     margin: 0 15px 15px 0;
     background: white;
-    height: 70px;
+    height: 90px;
     width: 100%;
     border-radius: 20px;
     box-shadow: 2px 2px 7px #d3d3d3;
@@ -692,7 +692,7 @@ article {
   .page-menu__bloc {
     margin: 0 15px 15px 0;
     background: white;
-    height: 70px;
+    height: 90px;
     width: 100%;
     border-radius: 20px;
     box-shadow: 2px 2px 7px #d3d3d3;
@@ -713,7 +713,7 @@ article {
   .page-menu__bloc {
     margin: 0 15px 15px 0;
     background: white;
-    height: 70px;
+    height: 90px;
     width: 100%;
     border-radius: 20px;
     box-shadow: 2px 2px 7px #d3d3d3;

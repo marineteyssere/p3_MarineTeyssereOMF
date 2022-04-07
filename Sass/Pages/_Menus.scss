@@ -59,6 +59,7 @@
     font-size: 1rem;
     font-weight: normal;
     margin: 20px 0px 8px 0px;
+    overflow: hidden; /* les dépassements seront masqués */
 }
 
 .page-menu__line 
@@ -184,7 +185,7 @@
 
         .page-menu__prix 
         {
-         margin-right: 30px;
+         margin-right: 5px;
          transition-duration: 2s;
         }
 
@@ -193,7 +194,7 @@
    
 }
 
-/*Responsive des checks*/
+/*Responsive*/
 
 @media only screen and (max-width: 576px) 
 {
@@ -202,11 +203,52 @@
     width: 20%;
     margin-right: -40px;
     }
+
+    .page-menu__text {
+        font-size: 2rem;
+    }
+
+    .page-restaurant__title {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .page-menu__accompagnement {
+        font-size: 2rem;
+    }
+
+    .omf-btn__title {
+        text-align: center;
+        padding-top: 5px;
+        color: white;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .footer-omf__title {
+       
+        font-size: 1.8rem;
+    }
+
+    .footer-omf__bloclink {
+       
+        font-size: 1.3rem;
+    }
+
+    .page-menu__prix {
+        
+        font-size: 2rem;
+    }
+
+
     .page-menu__bloc 
     {
         margin: 0 15px 15px 0;
         background: white;
-        height: 90px;
+        height: 110px;
         width: 100%;
         border-radius: 20px;
         box-shadow: 2px 2px 7px #d3d3d3;
@@ -220,6 +262,7 @@
         z-index: 1;
         opacity: 1;
         margin-right: 0px;
+        height: 110px;
         }
     }
 }
@@ -233,14 +276,55 @@
     width: 15%;
     margin-right: -40px;
     }
+
+    .page-menu__text {
+        font-size: 2rem;
+    }
+
+    .page-restaurant__title {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .page-menu__accompagnement {
+        font-size: 2rem;
+    }
+
+    .omf-btn__title {
+        text-align: center;
+        padding-top: 5px;
+        color: white;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .footer-omf__title {
+       
+        font-size: 1.8rem;
+    }
+
+    .footer-omf__bloclink {
+       
+        font-size: 1.3rem;
+    }
+
+    .page-menu__prix {
+        
+        font-size: 2rem;
+    }
+
+
     .page-menu__bloc 
     {
         margin: 0 15px 15px 0;
         background: white;
-        height: 90px;
         width: 100%;
         border-radius: 20px;
         box-shadow: 2px 2px 7px #d3d3d3;
+        height: 110px;
     
     
     &:hover 
@@ -251,6 +335,7 @@
         z-index: 1;
         opacity: 1;
         margin-right: 0px;
+        height: 110px;
         }
     }
 }
@@ -263,14 +348,54 @@
     width: 10%;
     margin-right: -50px;
     }
+
+    .page-menu__text {
+        font-size: 2rem;
+    }
+
+    .page-restaurant__title {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .page-menu__accompagnement {
+        font-size: 2rem;
+    }
+
+    .omf-btn__title {
+        text-align: center;
+        padding-top: 5px;
+        color: white;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .footer-omf__title {
+       
+        font-size: 1.8rem;
+    }
+
+    .footer-omf__bloclink {
+       
+        font-size: 1.3rem;
+    }
+
+    .page-menu__prix {
+        
+        font-size: 2rem;
+    }
+
     .page-menu__bloc 
     {
         margin: 0 15px 15px 0;
         background: white;
-        height: 90px;
         width: 100%;
         border-radius: 20px;
         box-shadow: 2px 2px 7px #d3d3d3;
+        height: 110px;
     
     
     &:hover 
@@ -281,6 +406,7 @@
         z-index: 1;
         opacity: 1;
         margin-right: 0px;
+        height: 110px;
         }
     }
 }
@@ -296,7 +422,7 @@
     {
     position: absolute;
     margin-right: 0;
-    margin-bottom: 520px;
+    margin-bottom: 850px;
     
     }
 }

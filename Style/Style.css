@@ -706,6 +706,30 @@ article {
     font-size: 2rem;
   }
 
+  .bloc-accroche__title {
+    font-size: 2.5rem;
+  }
+
+  .bloc-accroche__text {
+    font-size: 1.7rem;
+  }
+
+  .bloc-title {
+    font-size: 2.5rem;
+  }
+
+  .onglet-fonct__text {
+    font-size: 2rem;
+  }
+
+  .rest-prev__title {
+    font-size: 1.7rem;
+  }
+
+  .rest-prev__place {
+    font-size: 1.5rem;
+  }
+
   .page-menu__bloc {
     margin: 0 15px 15px 0;
     background: white;
@@ -762,6 +786,30 @@ article {
 
   .page-menu__prix {
     font-size: 2rem;
+  }
+
+  .bloc-accroche__title {
+    font-size: 2.5rem;
+  }
+
+  .bloc-accroche__text {
+    font-size: 1.7rem;
+  }
+
+  .bloc-title {
+    font-size: 2.5rem;
+  }
+
+  .onglet-fonct__text {
+    font-size: 2rem;
+  }
+
+  .rest-prev__title {
+    font-size: 1.7rem;
+  }
+
+  .rest-prev__place {
+    font-size: 1.5rem;
   }
 
   .page-menu__bloc {
@@ -822,6 +870,30 @@ article {
     font-size: 2rem;
   }
 
+  .bloc-accroche__title {
+    font-size: 2.5rem;
+  }
+
+  .bloc-accroche__text {
+    font-size: 1.7rem;
+  }
+
+  .bloc-title {
+    font-size: 2.5rem;
+  }
+
+  .onglet-fonct__text {
+    font-size: 2rem;
+  }
+
+  .rest-prev__title {
+    font-size: 1.7rem;
+  }
+
+  .rest-prev__place {
+    font-size: 1.5rem;
+  }
+
   .page-menu__bloc {
     margin: 0 15px 15px 0;
     background: white;
@@ -840,7 +912,7 @@ article {
 }
 /*Responsive coeur*/
 @media only screen and (min-width: 290px) and (max-width: 989px) {
-  .coeur-menu .icon-like .fa-heart {
+  .coeur-menu .icon-like .fa-heart .fas .fa-heart .icon-like--full .fa-lg {
     opacity: 0;
   }
 }

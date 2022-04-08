@@ -706,6 +706,12 @@ article {
     font-size: 2rem;
   }
 
+  .coeur-menu .icon-like .fa-heart {
+    margin-right: 0;
+    margin-bottom: 0px;
+    margin-top: 800px;
+  }
+
   .page-menu__bloc {
     margin: 0 15px 15px 0;
     background: white;
@@ -762,6 +768,13 @@ article {
 
   .page-menu__prix {
     font-size: 2rem;
+  }
+
+  .coeur-menu .icon-like .fa-heart {
+    display: flex 1;
+    justify-content: flex-end;
+    margin-right: 0;
+    margin-bottom: 0px;
   }
 
   .page-menu__bloc {
@@ -822,6 +835,12 @@ article {
     font-size: 2rem;
   }
 
+  .coeur-menu .icon-like .fa-heart {
+    margin-right: 0;
+    margin-bottom: 0px;
+    margin-top: 800px;
+  }
+
   .page-menu__bloc {
     margin: 0 15px 15px 0;
     background: white;
@@ -838,14 +857,19 @@ article {
     height: 110px;
   }
 }
-/*Responsive coeur*/
-@media only screen and (min-width: 290px) and (max-width: 989px) {
-  .coeur-menu .icon-like {
-    position: absolute;
+/*Responsive coeur
+
+@media only screen and (min-width: 290px) and (max-width: 989px) 
+{
+    .coeur-menu .icon-like .fa-heart
+    {
+    position: relative;
     margin-right: 0;
-    margin-bottom: 850px;
-  }
+    margin-bottom: 0px;
+    margin-top: 800px;
+    }
 }
+*/
 /* arrivée des coeurs */
 .coeur-menu .icon-like .icon-like--full .icon-like--empty {
   animation-name: coeur;

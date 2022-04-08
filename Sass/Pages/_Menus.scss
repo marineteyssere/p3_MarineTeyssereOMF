@@ -243,14 +243,6 @@
         font-size: 2rem;
     }
 
-    .coeur-menu .icon-like .fa-heart
-    {
-    margin-right: 0;
-    margin-bottom: 0px;
-    margin-top: 800px;
-    }
-
-
     .page-menu__bloc 
     {
         margin: 0 15px 15px 0;
@@ -323,13 +315,6 @@
         font-size: 2rem;
     }
 
-    .coeur-menu .icon-like .fa-heart
-    {
-    display: flex 1;
-    justify-content: flex-end;
-    margin-right: 0;
-    margin-bottom: 0px;
-    }
 
 
     .page-menu__bloc 
@@ -403,13 +388,6 @@
         font-size: 2rem;
     }
 
-    .coeur-menu .icon-like .fa-heart
-    {
-    margin-right: 0;
-    margin-bottom: 0px;
-    margin-top: 800px;
-    }
-
     .page-menu__bloc 
     {
         margin: 0 15px 15px 0;
@@ -436,19 +414,16 @@
 
 
 
-/*Responsive coeur
+/*Responsive coeur*/
 
 @media only screen and (min-width: 290px) and (max-width: 989px) 
 {
     .coeur-menu .icon-like .fa-heart
     {
-    position: relative;
-    margin-right: 0;
-    margin-bottom: 0px;
-    margin-top: 800px;
+    opacity: 0;
     }
 }
-*/ 
+
 /* arrivée des coeurs */ 
 .coeur-menu .icon-like .icon-like--full .icon-like--empty
 {

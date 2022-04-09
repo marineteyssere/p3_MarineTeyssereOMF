@@ -137,12 +137,15 @@
 
 /* Div des icons coeurs des pages menus */
 .coeur-menu {
-    position: absolute; right:50px; bottom:245px; margin-bottom:0px;
+    position: absolute;
+    right: 50px;
+    bottom: 245px; 
+    top: 50px;
+    margin-bottom: 0px;
     z-index: 50;
     width: 2rem;
     height: 2rem;
     cursor: pointer;
-    
   }
 
   .coeur-menu:hover {

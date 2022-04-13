@@ -24,14 +24,14 @@ section {
 
 title {
   font-family: "Roboto";
+  text-overflow: ellipsis;
 }
 
 h1 {
   display: block;
   font-size: 2em;
   font-weight: bold;
-  overflow: hidden;
-  /* les dépassements seront masqués */
+  text-overflow: ellipsis;
   font-family: "Roboto";
 }
 
@@ -39,8 +39,7 @@ h2 {
   display: block;
   font-size: 1.5em;
   font-weight: bold;
-  overflow: hidden;
-  /* les dépassements seront masqués */
+  text-overflow: ellipsis;
   font-family: "Roboto";
 }
 
@@ -48,36 +47,33 @@ h3 {
   display: block;
   font-size: 1.17em;
   font-weight: 900;
-  overflow: hidden;
-  /* les dépassements seront masqués */
+  text-overflow: ellipsis;
   font-family: "Roboto";
 }
 
 h4 {
   display: block;
   font-weight: bold;
-  overflow: hidden;
-  /* les dépassements seront masqués */
+  text-overflow: ellipsis;
   font-family: "Roboto";
 }
 
 h4 {
   display: block;
-  overflow: hidden;
-  /* les dépassements seront masqués */
+  text-overflow: ellipsis;
   font-family: "Roboto";
 }
 
 p {
   display: block;
-  overflow: hidden;
-  /* les dépassements seront masqués */
+  text-overflow: ellipsis;
   font-family: "Roboto";
 }
 
 a {
   background-color: transparent;
   font-family: "Roboto";
+  text-overflow: ellipsis;
 }
 
 article {
@@ -210,7 +206,7 @@ article {
 /* Div des icons coeurs des pages menus */
 .coeur-menu {
   position: absolute;
-  right: 50px;
+  right: 90px;
   bottom: 245px;
   top: 50px;
   margin-bottom: 0px;
@@ -350,7 +346,7 @@ article {
 }
 
 .rest-prev__card {
-  overflow: hidden;
+  text-overflow: ellipsis;
   height: 70%;
 }
 
@@ -438,6 +434,7 @@ article {
   font-size: 1rem;
   padding: 27px;
   margin: 0;
+  text-overflow: ellipsis;
 }
 
 .onglet-fonct__numb {
@@ -520,7 +517,7 @@ article {
 }
 
 .underheader-omf {
-  overflow: hidden;
+  text-overflow: ellipsis;
   height: 320px;
 }
 
@@ -553,6 +550,7 @@ article {
 
 .page-menu__title {
   margin-bottom: 15px;
+  text-overflow: ellipsis;
 }
 
 .page-menu__text {
@@ -560,22 +558,20 @@ article {
   font-size: 1rem;
   font-weight: normal;
   margin: 20px 0px 8px 0px;
-  overflow: hidden;
-  /* les dépassements seront masqués */
+  text-overflow: ellipsis;
 }
 
 .page-menu__line {
   background-color: #99E2D0;
   margin: 0;
   height: 3px;
-  width: 40px;
+  width: 50px;
 }
 
 .page-menu {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  /* les dépassements seront masqués */
+  text-overflow: ellipsis;
 }
 
 @media screen and (min-width: 990px) {
@@ -588,14 +584,14 @@ article {
   margin: 15px 0px 5px 15px;
   font-weight: bold;
   margin-top: 25px;
-  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .page-menu__accetprix {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
+  text-overflow: ellipsis;
   width: 85%;
   transform-origin: left 50%;
   transition-duration: 0.5s;
@@ -606,7 +602,7 @@ article {
   font-weight: normal;
   font-size: 0.85rem;
   white-space: nowrap;
-  overflow: hidden;
+  text-overflow: ellipsis;
   margin-left: 15px;
   margin-top: 0px;
   margin-bottom: 20px;
@@ -662,7 +658,7 @@ article {
   opacity: 1;
 }
 .page-menu__bloc:hover .page-menu__prix {
-  margin-right: 5px;
+  margin-right: 7px;
   transition-duration: 2s;
 }
 
@@ -670,7 +666,7 @@ article {
 @media only screen and (max-width: 576px) {
   .page-menu__check {
     width: 20%;
-    margin-right: -40px;
+    margin-right: -10px;
   }
 
   .page-menu__text {
@@ -748,11 +744,15 @@ article {
     margin-right: 0px;
     height: 110px;
   }
+  .page-menu__bloc:hover .page-menu__prix {
+    margin-right: 70px;
+    transition-duration: 2s;
+  }
 }
 @media only screen and (max-width: 768px) {
   .page-menu__check {
     width: 15%;
-    margin-right: -40px;
+    margin-right: -10px;
   }
 
   .page-menu__text {
@@ -826,12 +826,16 @@ article {
     opacity: 1;
     margin-right: 0px;
     height: 110px;
+  }
+  .page-menu__bloc:hover .page-menu__prix {
+    margin-right: 70px;
+    transition-duration: 2s;
   }
 }
 @media only screen and (min-width: 740px) and (max-width: 989px) {
   .page-menu__check {
-    width: 10%;
-    margin-right: -50px;
+    width: 15%;
+    margin-right: -10px;
   }
 
   .page-menu__text {
@@ -905,6 +909,10 @@ article {
     opacity: 1;
     margin-right: 0px;
     height: 110px;
+  }
+  .page-menu__bloc:hover .page-menu__prix {
+    margin-right: 70px;
+    transition-duration: 2s;
   }
 }
 /* arrivée des coeurs */

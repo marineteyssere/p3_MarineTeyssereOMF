@@ -138,7 +138,7 @@
 /* Div des icons coeurs des pages menus */
 .coeur-menu {
     position: absolute;
-    right: 50px;
+    right: 90px;
     bottom: 245px; 
     top: 50px;
     margin-bottom: 0px;
@@ -287,7 +287,7 @@
 
 .rest-prev__card 
 {
-    overflow: hidden;
+    text-overflow : ellipsis;
     height: 70%;
 }
 
@@ -392,6 +392,7 @@
     font-size: 1rem;
     padding: 27px;
     margin: 0;
+    text-overflow : ellipsis;
     
 }
 

@@ -26,7 +26,9 @@ section {
 }
 
 title{
-    font-family: "Roboto"
+    font-family: "Roboto";
+    text-overflow : ellipsis;
+    
 }
 
 h1 
@@ -34,8 +36,8 @@ h1
     display: block;
     font-size: 2em;
     font-weight: bold;
-    overflow: hidden; /* les dépassements seront masqués */
-    font-family: "Roboto"
+    text-overflow : ellipsis;
+    font-family: "Roboto";
 }
 
 h2 
@@ -43,7 +45,7 @@ h2
     display: block;
     font-size: 1.5em;
     font-weight: bold;
-    overflow: hidden; /* les dépassements seront masqués */
+    text-overflow : ellipsis;
     font-family: "Roboto"
 }
 
@@ -51,7 +53,7 @@ h3 {
     display: block;
     font-size: 1.17em;
     font-weight: 900;
-    overflow: hidden; /* les dépassements seront masqués */
+    text-overflow : ellipsis;
     font-family: "Roboto"
 }
 
@@ -59,28 +61,29 @@ h4
 {
     display: block;
     font-weight: bold;
-    overflow: hidden; /* les dépassements seront masqués */
+    text-overflow : ellipsis;
     font-family: "Roboto"
 }
 
 h4
 {
     display: block;
-    overflow: hidden; /* les dépassements seront masqués */
+    text-overflow : ellipsis;
     font-family: "Roboto"
 }
 
 
 p {
     display: block;
-    overflow: hidden; /* les dépassements seront masqués */
+    text-overflow : ellipsis;
     font-family: "Roboto"
 }
 
 a 
 {
     background-color: transparent;  
-    font-family: "Roboto"
+    font-family: "Roboto";
+    text-overflow : ellipsis;
 }
 
 article 
